@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------shared style------ */
+.primary-color {
+  color: orange;
+}
+.secondary-color {
+  color: #01acfd;
+}
+.btn {
+  width: 197px;
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  line-height: 30px;
+}
+/* ------Navbar Style------ */
+header {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px 0;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.nav-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.home-items {
+  display: flex;
+  font-size: 1.25em;
+  list-style: none;
+  gap: 2em;
+}
+.home-items > li > a {
+  text-decoration: none;
+}
+.home {
+  color: orange;
+  font-weight: bold;
+}
+.about {
+  color: #01acfd;
+  font-weight: 500;
+}
+.facilities {
+  color: #05d4df;
+  font-weight: 500;
+}
+.admission {
+  color: #5d58ef;
+  font-weight: 500;
+}
+.nav-btn {
+  width: 197px;
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 12px;
+  border: none;
+  line-height: 30px;
+}
+.menu {
+  display: none;
+}
+/* ------Hero Section Style------ */
+.hero-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+.hero-description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hero-btn {
+  background-color: black;
+}
+/* ----Curriculum section style---- */
+.curriculum-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  padding-top: 60px;
+}
+.curriculum-title {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+}
+.curriculum-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 80px 0;
+}
+.curriculum-card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  text-align: center;
+  padding: 50px 30px;
+}
+.curriculum-card-1 {
+  border: solid 1px #def5ff;
+  background-image: linear-gradient(
+    to bottom,
+    #def5ff 0%,
+    #f0f9ff 10%,
+    #ffffff 50%
+  );
+}
+.curriculum-card-2 {
+  border: solid 1px #fff4de;
+  background-image: linear-gradient(
+    to bottom,
+    #fff4de 0%,
+    #fffaf0 10%,
+    #ffffff 50%
+  );
+}
+.curriculum-card-3 {
+  border: solid 1px #f2e8ff;
+  background-image: linear-gradient(
+    to bottom,
+    #f0e6ff 0%,
+    #faf5ff 10%,
+    #ffffff 50%
+  );
+}
+.curriculum-cards-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.curriculum-card-title {
+  font-size: 24.5px;
+  font-weight: bold;
+  color: #202020;
+  line-height: 30.7px;
+  margin-bottom: 30px;
+}
+.curriculum-card-description {
+  font-size: 15px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 28.3px;
+  margin-bottom: 30px;
+}
+.curriculum-read-more a {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28.3px;
+  text-decoration: none;
+}
+.read-more-1 a {
+  color: #64c8ff;
+}
+.read-more-2 a {
+  color: #f0aa00;
+}
+.read-more-3 a {
+  color: #8700ff;
+}
+.angle {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.angle button {
+  color: #ffffff;
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.stories-section {
+  background-image: linear-gradient(
+    to top,
+    #f2d5a3 0%,
+    #f7e6c9 30%,
+    #f4ead9 60%,
+    #ffffff 100%
+  );
+  padding-bottom: 60px;
+}
+.stories-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+}
+.stories-title {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 57px;
+  margin-bottom: 80px;
+}
+.stories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.story-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #ffffff;
+  border-radius: 18px;
+  width: min-content;
+}
+.stories img {
+  border-radius: 18px 18px 0px 0px;
+}
+.story-1-text {
+  padding: 0px 30px 25px 40px;
+}
+.story-1-title {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.story-1-description {
+  font-size: 15.33px;
+  line-height: 28.8px;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 50px;
+}
+.story-1 button {
+  font-size: 15.3px;
+  line-height: 28.8px;
+  font-weight: 500;
+  border: none;
+  border-radius: 48px;
+  padding: 8px 20px;
+  color: #ffffff;
+  background-color: #3cd8e8;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: -26px;
+  margin-left: 40px;
+}
+.story-2,
+.story-3,
+.story-4,
+.story-5 {
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+.story-btn {
+  font-size: 15.3px;
+  line-height: 28.8px;
+  font-weight: 500;
+  border: none;
+  border-radius: 48px;
+  padding: 3px 16px;
+  color: #ffffff;
+  background-color: #95b226;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: -22px;
+  margin-left: 40px;
+}
+.story-3 button {
+  background-color: #5d58f0;
+}
+.story-title {
+  font-size: 15.3px;
+  line-height: 28.8px;
+  font-weight: bold;
+  padding: 20px 20px 50px 20px;
+}
+.view-all {
+  text-align: center;
+}
+.view-btn {
+  color: #ffffff;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  width: 197px;
+  height: 50px;
+  margin-top: 80px;
+}
+.hide {
+  display: none;
+}
+footer {
+  background-color: #a7db9e;
+}
+.footer-container {
+  max-width: 1160px;
+  padding: 100px 0;
+  font-family: "quicksand";
+}
+footer > div {
+  display: flex;
+  margin: 0 auto;
+}
+.footer-card-1 {
+  width: 399px;
+  padding-right: 15px;
+  margin-right: 190px;
+}
+.footer-logo img {
+  width: 82px;
+  height: 81px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer-logo > p {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 39px;
+}
+.footer-text {
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer-card-2 {
+  margin-right: 160px;
+}
+.footer-card-2 p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.footer-card-2 a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.footer-card-3 p {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ------------------responsive-------------------- */
+@media screen and (max-width: 393px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* navbar responsive style */
+  header {
+    border: solid 1px orange;
+    padding: 10px 0;
+    margin-bottom: 5px;
+  }
+  nav {
+    max-width: 357px;
+    margin: 0 auto;
+  }
+  nav img {
+    max-height: 46px;
+    max-width: 46px;
+  }
+  .nav-title,
+  .home-items,
+  .nav-btn {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  /* -----Hero section responsive----- */
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 357px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 18px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .hero-container div {
+    text-align: center;
+  }
+  /* Standard Curriculum Card Responsive */
+  .curriculum-container {
+    padding-top: 40px;
+  }
+  .curriculum-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .curriculum-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+    padding: 0 27px;
+    gap: 0;
+    margin-bottom: 0px;
+  }
+  .curriculum-card {
+    padding: 36px 28px;
+    margin-bottom: 10px;
+  }
+  .curriculum-card > div {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  .curriculum-cards-img img {
+    width: 45%;
+  }
+  .curriculum-card-title {
+    font-size: 16.6px;
+    line-height: 20.8px;
+  }
+  .curriculum-card-description {
+    font-size: 10.22px;
+    line-height: 19.2px;
+  }
+  .curriculum-read-more a {
+    font-size: 10.22px;
+    line-height: 19.2px;
+  }
+  .angle {
+    display: none;
+  }
+  /* Our Stories Section Responsive */
+  .stories-section {
+    margin-top: 10px;
+  }
+  .stories-container {
+    padding: 40px 25px;
+  }
+  .stories-title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 57.7px;
+    margin-bottom: 20px;
+  }
+  .story-1 {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .story-2 img {
+    width: 100%;
+  }
+  .story-3 img {
+    width: 100%;
+  }
+  .story-4 img {
+    width: 100%;
+  }
+  .story-5 img {
+    width: 100%;
+  }
+  .stories img {
+    border-radius: 9.5px 9.5px 0px 0px;
+  }
+  .story-btn {
+    font-size: 9.13px;
+    line-height: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 48px;
+    padding: 3px 8px;
+    color: #ffffff;
+    background-color: #95b226;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    top: -16px;
+    margin-left: 20px;
+  }
+  .view-btn {
+    color: #ffffff;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    width: 197px;
+    height: 50px;
+    margin-top: -20px;
+  }
+  .story-title {
+    font-size: 9.13px;
+    line-height: 17px;
+    font-weight: bold;
+    padding: 0px 25px 20px 25px;
+  }
+  /* Footer Section Responsive */
+  .footer-container {
+    max-width: 357px;
+  }
+  footer > div {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-logo {
+    width: 69px;
+    height: 69px;
+  }
+  .footer-logo p {
+    font-size: 35px;
+    line-height: 33px;
+  }
+  .footer-text {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .footer-card-1{
+    margin-bottom: 30px;
+  }
+  .footer-card-2{
+    margin-bottom: 40px;
+  }
+}
